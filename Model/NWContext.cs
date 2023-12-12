@@ -3,15 +3,12 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Configuration.Json;
+
 
 namespace NWConsole.Model
 {
-    public partial class NWContext : DbContext
+    public class NWContext : DbContext
     {
-        public NWContext()
-        {
-        }
 
         public NWContext(DbContextOptions<NWContext> options)
             : base(options)
@@ -283,9 +280,9 @@ namespace NWConsole.Model
                     .HasConstraintName("FK_Territories_Region");
             });
 
-            OnModelCreatingPartial(modelBuilder);
+
         }
 
-        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
     }
 }

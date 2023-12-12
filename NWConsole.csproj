@@ -16,9 +16,39 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.Extensions.Configuration" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
-    <PackageReference Include="NLog" Version="5.1.1" />
+    <PackageReference Include="NLog" Version="5.2.7" />
+  </ItemGroup>
+   <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWArt1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWArt2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWBye.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWCategoryMenu.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWCategoryMenuDetail.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWMenu.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWMainMenuDetail.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWProductMenu.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWProductMenuDetail.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MenuServices/Art/NWTitle.txt" />
   </ItemGroup>
 
 </Project>
